@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>br.com.andrelemos.puc.maratona</OriginalElement>
+  <nodes>
+    <node x="166.25" y="81.0">br.com.andrelemos.puc.maratona.Percurso</node>
+    <node x="152.0" y="0.0">br.com.andrelemos.puc.maratona.PontosDeAgua</node>
+    <node x="0.0" y="162.0">br.com.andrelemos.puc.maratona.Corredor</node>
+    <node x="120.99999999999999" y="162.0">br.com.andrelemos.puc.maratona.Organizador</node>
+    <node x="177.25" y="243.0">br.com.andrelemos.puc.maratona.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="br.com.andrelemos.puc.maratona.Main" target="br.com.andrelemos.puc.maratona.PontosDeAgua">
+      <point x="29.249999999999996" y="-15.5" />
+      <point x="245.5" y="223.0" />
+      <point x="276.75" y="223.0" />
+      <point x="276.75" y="56.0" />
+      <point x="262.8333333333333" y="56.0" />
+      <point x="44.33333333333334" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Main" target="br.com.andrelemos.puc.maratona.Percurso">
+      <point x="9.75" y="-15.5" />
+      <point x="226.0" y="213.0" />
+      <point x="259.47222222222223" y="213.0" />
+      <point x="259.47222222222223" y="137.0" />
+      <point x="249.58333333333331" y="137.0" />
+      <point x="33.33333333333334" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Organizador" target="br.com.andrelemos.puc.maratona.PontosDeAgua">
+      <point x="-40.0" y="-15.5" />
+      <point x="141.0" y="137.0" />
+      <point x="155.75" y="137.0" />
+      <point x="155.75" y="56.0" />
+      <point x="174.16666666666666" y="56.0" />
+      <point x="-44.333333333333336" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Percurso" target="br.com.andrelemos.puc.maratona.PontosDeAgua">
+      <point x="0.0" y="-15.5" />
+      <point x="216.25" y="56.0" />
+      <point x="218.5" y="56.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Main" target="br.com.andrelemos.puc.maratona.Corredor">
+      <point x="-29.25" y="-15.5" />
+      <point x="187.0" y="223.0" />
+      <point x="50.5" y="223.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Organizador" target="br.com.andrelemos.puc.maratona.Percurso">
+      <point x="0.0" y="-15.5" />
+      <point x="181.0" y="137.0" />
+      <point x="182.91666666666663" y="137.0" />
+      <point x="-33.33333333333334" y="15.5" />
+    </edge>
+    <edge source="br.com.andrelemos.puc.maratona.Main" target="br.com.andrelemos.puc.maratona.Organizador">
+      <point x="-9.75" y="-15.5" />
+      <point x="206.5" y="213.0" />
+      <point x="181.0" y="213.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="137.5" y="150.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
