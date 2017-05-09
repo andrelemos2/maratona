@@ -11,11 +11,11 @@ public class Organizador {
 
     private Percurso percurso;
 
-    public Organizador(List<PontosDeAgua> pontosDeAguas){
-        this.percurso = new Percurso(pontosDeAguas);
+    public void definePercurso(Percurso percurso) {
+        this.percurso = percurso;
     }
 
-    public Percurso getPercurso() {
+    public Percurso obterPercurso() {
         return percurso;
     }
 

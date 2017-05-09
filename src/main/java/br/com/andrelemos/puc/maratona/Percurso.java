@@ -8,18 +8,14 @@ import java.util.List;
  */
 public class Percurso {
 
-    private List<PontosDeAgua> listaFinal = new ArrayList<>();
 
-    public Percurso(List<PontosDeAgua> pontosDeAguas) {
-        listaFinal.add(new PontosDeAgua(0));
+    private Usuario usuario;
 
-        pontosDeAguas.stream()
-                .forEach(pontosDeAgua -> listaFinal.add(pontosDeAgua));
-
-        listaFinal.add(new PontosDeAgua(42195));
+    public Percurso(Usuario usuario) {
+        this.usuario = usuario;
     }
 
-    public List<PontosDeAgua> getListaFinal() {
-        return listaFinal;
+    public List<PontoDeAgua> obterPontoDeAgua() {
+        return usuario.obterPontoDeAguas();
     }
 }

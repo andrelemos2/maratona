@@ -6,27 +6,27 @@ package br.com.andrelemos.puc.maratona;
 public class Maratonista {
 
     private final int DISTANCIA_MINIMA_PONTO_DE_AGUA = 10000;
-    private String resultado;
+    private Resultado resultado;
 
-    public String correr(Percurso percurso) {
+    public Resultado correr(Percurso percurso) {
 
         float pos = 0;
 
-        for (PontosDeAgua pontos : percurso.getListaFinal()) {
-            float distancia = pontos.getPosicao() - pos;
+        for (PontoDeAgua pontos : percurso.obterPontoDeAgua()) {
+            float distancia = pontos.obterPosicao() - pos;
 
             if (distancia > 0 && distancia > DISTANCIA_MINIMA_PONTO_DE_AGUA) {
                 this.resultado = Resultado.NAO_TERMINA;
                 return this.resultado;
             }
-            pos = pontos.getPosicao();
+            pos = pontos.obterPosicao();
         }
         this.resultado = Resultado.TERMINA;
         return this.resultado;
     }
 
 
-    public String getResultado() {
+    public Resultado obterResultado() {
         return resultado;
     }
 }
