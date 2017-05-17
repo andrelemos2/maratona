@@ -14,6 +14,7 @@
         <maven.plugin.version>3.6.1</maven.plugin.version>
         <surefire.version>2.19.1</surefire.version>
         <hamcrest.version>2.0.0.0</hamcrest.version>
+        <mockito.version>1.9.5</mockito.version>
     </properties>
 
     <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-junit -->
@@ -23,7 +24,35 @@
             <artifactId>hamcrest-junit</artifactId>
             <version>${hamcrest.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.mockito/mockito-all -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
     </dependencies>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.3.RELEASE</version>
+    </parent>
+
 
     <!-- BUILD CONFIGURATION -->
     <build>

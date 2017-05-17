@@ -1,4 +1,4 @@
-package br.com.andrelemos.puc.maratona;
+package br.com.andrelemos.puc.maratona.entity;
 
 /**
  * Created by Andre Lemos on 07/05/2017.
