@@ -1,8 +1,5 @@
 package br.com.andrelemos.puc.maratona.entity;
 
-/**
- * Created by Andre Lemos on 07/05/2017.
- */
 public enum  Resultado {
 
     TERMINA("TERMINA"),

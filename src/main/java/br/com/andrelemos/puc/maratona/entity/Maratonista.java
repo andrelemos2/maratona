@@ -8,13 +8,9 @@ public class Maratonista {
         this.metragem = metragem;
     }
 
-    public int getMetragem() {
-        return metragem;
-    }
-
     public boolean getResultado(Percurso percurso) {
         int ultimaPosicao = 0;
-        for (PontoDeAgua pa : percurso.getPontosDeAgua()) {
+        for (PontoDeAgua pa : percurso.obterPontosDeAgua()) {
 
             int i = pa.obterPosicao() - ultimaPosicao;
 

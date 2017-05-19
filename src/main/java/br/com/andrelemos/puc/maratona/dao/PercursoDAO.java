@@ -15,5 +15,4 @@ public class PercursoDAO {
         return this.percurso;
     }
 
-
 }

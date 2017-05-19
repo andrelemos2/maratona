@@ -1,19 +1,21 @@
 package br.com.andrelemos.puc.maratona.entity;
 
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Percurso {
 
-    private List<PontoDeAgua> pontosDeAgua;
+    private List<PontoDeAgua> pontosDeAgua = new ArrayList<>();
 
-
-    public void setPontosDeAgua(List<PontoDeAgua> pontosDeAgua) {
-        this.pontosDeAgua = pontosDeAgua;
+    public void adicionaPontoDeAgua(PontoDeAgua pa) {
+        this.pontosDeAgua.add(pa);
     }
 
-    public List<PontoDeAgua> getPontosDeAgua() {
-        return pontosDeAgua;
+    public Collection<PontoDeAgua> obterPontosDeAgua() {
+        return Collections.unmodifiableCollection(pontosDeAgua);
     }
 
 }
